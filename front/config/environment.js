@@ -5,6 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'front',
     environment: environment,
     baseURL: '/',
+    podModulePrefix: 'front/pods',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
