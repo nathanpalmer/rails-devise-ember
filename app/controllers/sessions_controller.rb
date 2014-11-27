@@ -6,7 +6,7 @@ class SessionsController < Devise::SessionsController
     if current_user.present?
       render json: current_user
     else
-      head 404
+      head :unauthorized
     end
   end
 
