@@ -19,7 +19,9 @@ module.exports = function(environment) {
     },
 
     'simple-auth': {
-      authenticationRoute: 'users.login'
+      authenticationRoute: 'users.login',
+      authorizer: 'simple-auth-authorizer:devise',
+      resourceName: 'user'
     }
   };
 
