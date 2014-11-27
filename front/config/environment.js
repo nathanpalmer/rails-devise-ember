@@ -21,6 +21,7 @@ module.exports = function(environment) {
     'simple-auth': {
       authenticationRoute: 'users.login',
       authorizer: 'simple-auth-authorizer:devise',
+      store: 'simple-auth-session-store:rails',
       resourceName: 'user'
     }
   };

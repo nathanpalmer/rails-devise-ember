@@ -4,6 +4,10 @@ Rails.application.routes.draw do
              :sessions => "sessions"
            }
 
+  devise_scope :user do
+    get '/users/restore', to: 'sessions#restore'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
